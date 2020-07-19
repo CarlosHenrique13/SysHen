@@ -4,7 +4,7 @@
 
 ======================================================================================
 # __System Block__                                                                      
-Intalador_____________________________________________________________________________
+__Intalador__                                                                          
 Para fazer fazer instlação de aplicativos deve conter um arquivo com os comandos para 
 instlação, para ser reconhecido como aplicativo.No arquivo de instalação devera conter,
 a descrição do criador do projeto e o comando de iniciar.                              
