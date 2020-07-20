@@ -11,7 +11,14 @@ div#corpo {
 }
 /* Estrutura Basica */
 h1{
+    text-align: center;
     color: rgb(79, 24, 131);
+}
+h2 {
+    color: blueviolet
+}
+h3 {
+    color: rgb(106, 56, 153);
 }
 xmp {
     border-radius: 10px;
@@ -25,9 +32,10 @@ div#SystemBlock{
     border-radius: 10px;
     box-shadow: 1px 2px 2px rgb(0,0,0,0.5);
 }
-h2 {
-    color: blueviolet
-}
-h3 {
-    color: rgb(106, 56, 153);
+/* Rodape */
+footer{
+    margin: 10px;
+    border-top: 1px solid black;
+    padding: 5px;
+    text-align: center;
 }
