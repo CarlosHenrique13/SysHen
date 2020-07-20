@@ -1,0 +1,33 @@
+body {
+    background-color: #eeeeee;
+}
+div#corpo {
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+/* Estrutura Basica */
+h1{
+    color: rgb(79, 24, 131);
+}
+xmp {
+    border-radius: 10px;
+    border: 1px solid black;
+}
+/* System Block */
+div#SystemBlock{
+    padding: 5px;
+    text-align: justify;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px rgb(0,0,0,0.5);
+}
+h2 {
+    color: blueviolet
+}
+h3 {
+    color: rgb(106, 56, 153);
+}
