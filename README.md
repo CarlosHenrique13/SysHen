@@ -2,7 +2,6 @@
  Aplicação e reclamação de problemas
  site: http://syshen.epizy.com
 
-======================================================================================
 # __System Block__                                                                      
 __Intalador__                                                                          
 Para fazer fazer instlação de aplicativos deve conter um arquivo com os comandos para 
