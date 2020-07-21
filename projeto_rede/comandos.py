@@ -1,7 +1,8 @@
 #Pacotes
 from rede.ips import *
+from tkinter import *
 
 #Comandos
-def Comando(comand,saida):
-    coman = comand.split(" ")
-    saida.insert(0.0,coman)
+def Comando(comando):
+    coman = comando
+    return coman
