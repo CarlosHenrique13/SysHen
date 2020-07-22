@@ -24,19 +24,27 @@ def Comando(comando,janela,area):
         if coman[0] == 'ip':
             return retorno(descobre_ip(coman[1],coman[1]))
         elif coman[0] == 'serv':
-            print(comando,coman[1],coman[2],coman[3])
             arg = open(f"{os.getcwd()}/serve.py", 'wt+')
             arg.write(f"import os\nos.system(fr'{os.getcwd()}/rede/serve/__init__.py {coman[1]} {coman[2]} {coman[3]}')\n")
             arg.close()
             os.startfile(f"{os.getcwd()}/serve.py")
+            return retorno("Servido Iniciando")
+        elif coman[0] == "ctp":
+            arg = open(f"{os.getcwd()}/tcp.py", 'wt+')
+            arg.write(
+                f"import os\nos.system(fr'{os.getcwd()}/rede/cliente/__init__.py {coman[1]} {coman[2]}')\n")
+            arg.close()
+            os.startfile(f"{os.getcwd()}/tcp.py")
             return retorno("Servido Iniciando")
         else:
             return f"Comando: {comando} não reconhecido"
     #Comandos simples
     else:
         if coman[0] == "finx":
+            finaliza_serve()
+            if os.path.isfile(f"{os.getcwd()}/serve.py"):
+                os.remove(f"{os.getcwd()}/serve.py")
             exit()
-            print("fim X")
         elif coman[0] == 'cstopserv':
             return retorno(finaliza_serve())
         else:
