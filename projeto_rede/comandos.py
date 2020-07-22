@@ -11,7 +11,7 @@ def retorno(resutado):
             resutado += ' '
     return resutado
 #Comandos
-def Comando(comando,area):
+def Comando(comando,janela,area):
     temp = comando.split(" ")
     coman = []
     for c in range(0,len(temp)):
@@ -34,10 +34,11 @@ def Comando(comando,area):
             return f"Comando: {comando} não reconhecido"
     #Comandos simples
     else:
-        if coman[0] == 'cstop':
-            import subprocess, signal
-            p = subprocess.Popen(['ps', '-A'], stdout=subprocess.PIPE)
-            out, err = p.communicate()
+        if coman[0] == "finx":
+            exit()
+            print("fim X")
+        elif coman[0] == 'cstopserv':
+            return retorno(finaliza_serve())
         else:
             return f"Comando: {comando} não reconhecido"
 
