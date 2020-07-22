@@ -3,7 +3,7 @@ from comandos import *
 
 
 def comand(digito):
-    comand_saida.insert(0.0,f'{Comando(comand_entra.get(0.0, END))}')
+    comand_saida.insert(0.0,f'{Comando(comand_entra.get(0.0, END),comand_saida)}')
     comand_recent.insert(0.0,comand_entra.get(0.0, END))
     comand_saida.insert(0.0,"===================================")
     comand_entra.delete('1.0', END)

@@ -1,20 +1,23 @@
-def servidor(area):
-    import socket
+from tkinter import *
+import socket
+import sys
+from time import sleep
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    host = "127.0.0.1" #127.0.0.1
-    porta = 8291
+host = str(sys.argv[1])
+porta = int(sys.argv[2])
+conexao = int(sys.argv[3])
+print(f'Meu ip: {host}:{porta} conexoa: {conexao}')
+msg = "Enviando mensagem para o cliente ola"
+s.bind((host,porta))
+s.listen(conexao)
 
-    msg = "Enviando mensagem para o cliente ola"
+while True:
+    c, e = s.accept()
+    print(f"Conectado com {e}")
+    c.send(msg.encode('ascii'))
+    c.close()
+    sleep(0.5)
 
-    s.bind((host,porta))
-    s.listen(1)
-    while True:
-        c, e = s.accept()
-        try:
-            area.insert(0.0,f"Conectado com {e}")
-        except:
-            print(f"Conectado com {e}")
-        c.send(msg.encode('ascii'))
-        c.close()
+
