@@ -35,15 +35,17 @@ def Comando(comando,janela,area):
                 f"import os\nos.system(fr'{os.getcwd()}/rede/cliente/__init__.py {coman[1]} {coman[2]}')\n")
             arg.close()
             os.startfile(f"{os.getcwd()}/tcp.py")
-            return retorno("Servido Iniciando")
+            return retorno(f"Conectando ao servidor")
         else:
             return f"Comando: {comando} não reconhecido"
     #Comandos simples
     else:
         if coman[0] == "finx":
             finaliza_serve()
-            if os.path.isfile(f"{os.getcwd()}/serve.py"):
-                os.remove(f"{os.getcwd()}/serve.py")
+            arquivos = ['serve.py','tcp.py']
+            for c in range(0,len(arquivos)):
+                if os.path.isfile(f"{os.getcwd()}/{arquivos[c]}"):
+                    os.remove(f"{os.getcwd()}/{arquivos[c]}")
             exit()
         elif coman[0] == 'cstopserv':
             return retorno(finaliza_serve())
