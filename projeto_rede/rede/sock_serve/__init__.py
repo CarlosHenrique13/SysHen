@@ -17,7 +17,7 @@ else:
 conexao = valores[1]
 print(f'Meu ip: {host}:{porta} conexoa: {conexao}')
 
-msg = "Enviando mensagem para o cliente ola"
+msg = "Enviando mensagem para o sock_cliente ola"
 #Conexão
 s.bind((host,porta))
 s.listen(conexao)
