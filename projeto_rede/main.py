@@ -24,10 +24,15 @@ comand_saida.place(x=408,y=20)
 #Comando recentes
 comand_recent = Text(janela,width=50,height=10,bg='gray',fg='#ffffff')
 comand_recent.place(x=5,y=180)
-#
-comand_recent = Text(janela,width=50,height=10,bg='gray',fg='#ffffff')
-comand_recent.place(x=5,y=180)
 #Comando recentes
 comand_recent = Text(janela,width=50,height=10,bg='gray',fg='#ffffff')
 comand_recent.place(x=5,y=180)
 janela.mainloop()
+try:
+    finaliza_serve()
+    arquivos = ['sock_serve.py', 'tcp.py', 'ssh_client.py']
+    for c in range(0, len(arquivos)):
+        if os.path.isfile(f"{os.getcwd()}/{arquivos[c]}"):
+            os.remove(f"{os.getcwd()}/{arquivos[c]}")
+except:
+    print('Erro ao apagar os arquivos')

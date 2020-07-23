@@ -36,13 +36,20 @@ def Comando(comando,janela,area):
             arg.close()
             os.startfile(f"{os.getcwd()}/tcp.py")
             return retorno(f"Conectando ao servidor")
+        elif coman[0] == 'ssh':
+            arg = open(f"{os.getcwd()}/ssh_client.py", 'wt+')
+            arg.write(
+                f"import os\nos.system(fr'{os.getcwd()}/rede/sock_serve/__init__.py {coman[1]} {coman[2]} {coman[3]}')\n")
+            arg.close()
+            os.startfile(f"{os.getcwd()}/sock_serve.py")
+            return retorno("Servido Iniciando")
         else:
             return f"Comando: {comando} não reconhecido"
     #Comandos simples
     else:
         if coman[0] == "finx":
             finaliza_serve()
-            arquivos = ['sock_serve.py','tcp.py']
+            arquivos = ['sock_serve.py','tcp.py','ssh_client.py']
             for c in range(0,len(arquivos)):
                 if os.path.isfile(f"{os.getcwd()}/{arquivos[c]}"):
                     os.remove(f"{os.getcwd()}/{arquivos[c]}")
