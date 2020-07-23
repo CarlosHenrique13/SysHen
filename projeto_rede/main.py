@@ -30,7 +30,4 @@ comand_recent.place(x=5,y=180)
 #Comando recentes
 comand_recent = Text(janela,width=50,height=10,bg='gray',fg='#ffffff')
 comand_recent.place(x=5,y=180)
-
-
-
 janela.mainloop()
