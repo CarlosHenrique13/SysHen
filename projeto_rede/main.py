@@ -31,6 +31,10 @@ comand_recent.place(x=5,y=180)
 comand_recent = Text(janela,width=50,height=10,bg='gray',fg='#ffffff')
 comand_recent.place(x=5,y=180)
 
-
-
 janela.mainloop()
+finaliza_serve()
+arquivos = ['serve.py','tcp.py']
+for c in range(0,len(arquivos)):
+    if os.path.isfile(f"{os.getcwd()}/{arquivos[c]}"):
+        os.remove(f"{os.getcwd()}/{arquivos[c]}")
+exit()
