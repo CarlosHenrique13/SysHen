@@ -17,7 +17,7 @@ nav#menur{
 .menu{
     position: relative;
     list-style:none; 
-    float: left; 
+    float: right; 
     margin: 2px;
 }
 .menu li{
@@ -26,15 +26,15 @@ nav#menur{
     border-right:1px solid black; 
 }
 .menu li a{
-    color:green; 
+    color: rebeccapurple; 
     text-decoration:none; 
     padding: 5px; 
     display:block;
 } 
 .menu li a:hover{
-    background: gray; 
-    color:#fff; 
-    text-shadow:0px 0px 5px #fff; 
+    background: rgb(181, 152, 207); 
+    color: rebeccapurple; 
+    text-shadow:0px 0px 5px rebeccapurple; 
 }
 .menu li  ul{
     position: absolute; 
