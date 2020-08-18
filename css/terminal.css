@@ -1,0 +1,26 @@
+body {
+    background-color: #eeeeee;
+}
+div#corpo {
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+/* Estrutura Basica */
+h1{
+    text-align: center;
+    color: rgb(79, 24, 131);
+}
+h2 {
+    color: blueviolet
+}
+h3 {
+    color: rgb(106, 56, 153);
+}
+xmp {
+    border-radius: 10px;
+    border: 1px solid black;
+}
