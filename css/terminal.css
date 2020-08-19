@@ -24,3 +24,18 @@ xmp {
     border-radius: 10px;
     border: 1px solid black;
 }
+table {
+    font-size: 15px;
+    border: 1px solid black;
+}
+.categoria {
+    background-color: rgb(150, 94, 206);
+}
+tr {
+    border-left: 1px solid black;
+}
+td {
+    padding: 5px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
