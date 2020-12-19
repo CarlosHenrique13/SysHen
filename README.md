@@ -21,3 +21,9 @@ Esta linquagem e um projeto para que posar ser feito pequenas aplicaçãos para 
  Python: **3.7.5**<br>
  Pacotes: **Inválido**<br>
  Versão: **1.0**
+## REPORTAR 
+ Erros nos App: <a href="https://github.com/CarlosHenrique13/SysHen/issues/1">**Reporta Aqui**</a><br>
+ 
+ Cntato: <a href="https://github.com/CarlosHenrique13/SysHen/issues/2">**Aqui** </a><br>
+ 
+ Suguestões: <a href="https://github.com/CarlosHenrique13/SysHen/issues/3">**Aqui**</a>
