@@ -3,6 +3,9 @@
 <a href="https://carloshenrique13.github.io/SysHen/index.html" >Documentação da linquagem</a><br>
 ![Qrcode(2)](https://user-images.githubusercontent.com/62728022/102691934-debecc00-41ee-11eb-9a5f-d2b5084e19dc.png)
 
+## Direitos de uso
+Você tem todo o direito de usar esse conteúdo para seu próprio aprendizado.Porém todos o que usarem esse material - seja para qual for a finalidade - deverão manter a referência ao material original, criado e disponibilizado pelo dono do repositório. Este conteúdo não poderá ser utilizado em nenhuma hipótese para ser replicada - integral ou parcialmente - por impressas ou pessoas, com finalidades de obter ganho financeiro com ele.<br>
+
 <a href="http://syshen.epizy.com/?i=1" >Site para baixa o app</a><br>
 ![Qrcode(3)](https://user-images.githubusercontent.com/62728022/102691936-e5e5da00-41ee-11eb-9c28-75a4a9448467.png)
 
